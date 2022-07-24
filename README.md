@@ -69,3 +69,25 @@ The Vitolus GmbH Team
         email: root@gmail.com
         pwd: root1234
     ```
+-   Provide an endpoint to authenticate with the API using username, password and return a JWT
+    ``` 
+        Post call To get Access Token and Refesh Token
+        http://0.0.0.0:8000/token/
+        Form data
+            email: root@gmail.com
+            pwd: root1234
+        Response: {
+            "refresh": <refreshtoken>
+            "access": <access_token>
+        }
+    ```
+    ``` 
+        Post call To get Access Token From Refesh Token
+        http://0.0.0.0:8000/token/refresh/
+        Form data
+            refresh: <refreshtoken>
+        Response: {
+            "refresh": <refresh_token>
+            "access": <access_token>
+        }
+    ```
