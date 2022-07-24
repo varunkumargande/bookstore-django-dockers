@@ -91,3 +91,24 @@ The Vitolus GmbH Team
             "access": <access_token>
         }
     ```
+-   Implement REST endpoints for the `/books` resource
+    -   No authentication required
+    -   Allows only GET (List/Detail) operations
+    -   Make the List resource searchable with query parameters
+    ```
+        Get api for listing books
+        http://0.0.0.0:8000/book/
+        query parameters
+        search=<string> (will check title matches)
+        limit=<number> (if given then displays paginated data)
+        authentication: not required only for get call
+    ```
+
+-   To get data in xml format
+    -   curl --location --request GET '0.0.0.0:8000/api/book/' --header 'Accept: application/xml'
+-   To get data in json format
+    -  curl --location --request GET '0.0.0.0:8000/api/book/' --header 'Accept: application/json'
+
+ -   Provide REST resources for the authenticated user
+    -   Implement the typical CRUD operations for this resource
+    -   Implement an endpoint to unpublish a book (DELETE)

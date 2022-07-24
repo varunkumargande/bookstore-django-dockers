@@ -128,3 +128,4 @@ dmypy.json
 .devcontainer/
 .vscode/
 data/
+media
