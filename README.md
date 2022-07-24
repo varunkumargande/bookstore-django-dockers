@@ -43,3 +43,29 @@ going into production - then push your changes to the master branch. After you h
 All the best and happy coding,
 
 The Vitolus GmbH Team
+
+
+### Developer notes
+-   Install Docker Application from official documentation and run it
+    ```
+        https://docs.docker.com/desktop/install/mac-install/
+    ```
+-   Run the following commands while initial setup
+    ```
+        docker-compose up
+        ./manage.py initadmin
+    ```
+-   If you are not using remote container in VSCode are Pycharm, you can access the remote terminal to run ./manage.py cmds by running
+    ```
+        docker exec -it <container name> bash
+    ```
+-   To check the conatainer name
+    ```
+        docker ps
+    ```
+-   To login to superadmin
+    ``` 
+        http://0.0.0.0:8000/admin/
+        email: root@gmail.com
+        pwd: root1234
+    ```
