@@ -112,3 +112,7 @@ The Vitolus GmbH Team
  -   Provide REST resources for the authenticated user
     -   Implement the typical CRUD operations for this resource
     -   Implement an endpoint to unpublish a book (DELETE)
+
+    RUD Operations
+    http://0.0.0.0:8000/book/<book_id>
+    authentication is mandatory
