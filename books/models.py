@@ -15,7 +15,7 @@ class AbstractBook(models.Model):
     )
     # considering the german euro currency
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    cover_image = models.ImageField(upload_to="images/")
+    cover_image = models.ImageField(upload_to="images/", blank=True)
 
     created = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True, blank=True)

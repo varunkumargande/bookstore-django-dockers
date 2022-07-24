@@ -169,3 +169,5 @@ AUTH_USER_MODEL = "authors.Author"
 # for uploading images
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
+
+TEST_RUNNER = 'snapshottest.django.TestRunner'
