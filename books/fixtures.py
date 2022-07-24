@@ -6,9 +6,8 @@ from books.models import Book
 
 class BookFactory(factory.django.DjangoModelFactory):
     title = factory.Faker("title")
-    description = factory.Faker("description")
-    price = factory.Faker("price")
-    author = factory.Faker("title")
+    description = "description"
+    price = 100
 
     class Meta:
         model = Book
