@@ -42,7 +42,7 @@ class BookViewset(ModelViewSet):
         return [permissions.IsAuthenticated()]
 
     def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
+        serializer.save(author=self.request.user)
 
     def update(self, request, *args, **kwargs):
         """Allow partial updates without mandatory fields"""
